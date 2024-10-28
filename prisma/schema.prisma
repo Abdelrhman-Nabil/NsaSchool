@@ -4,7 +4,7 @@ generator client {
 
 datasource db {
   provider = "postgresql"
-  url      = "postgresql://nsa:nsa@localhost:4444/school"
+  url      = env("DATABASE_URL")
 }
 
 model Admin {
